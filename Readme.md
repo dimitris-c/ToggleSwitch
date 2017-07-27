@@ -19,7 +19,7 @@ A custom UISwitch
 
 ## Requirements
 
-- iOS 8.0+ / Mac OS X 10.10+ / tvOS 9.0+ / watchOS 2.0+
+- iOS 9.0+
 - Xcode 8.0+
 
 ## Installation
@@ -38,7 +38,7 @@ To integrate ToggleSwitch into your Xcode project using CocoaPods, specify it in
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
 pod 'ToggleSwitch', '~> 1.0'
@@ -76,7 +76,7 @@ import PackageDescription
 let package = Package(
     name: "HelloToggleSwitch",
     dependencies: [
-        .Package(url: "https://github.com/Decimal/ToggleSwitch.git", "1.0")
+        .Package(url: "https://github.com/dimitris-c/ToggleSwitch.git", "1.0")
     ]
 )
 ```

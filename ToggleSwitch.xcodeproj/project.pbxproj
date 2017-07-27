@@ -8,21 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3549BB501DA38A2000C63030 /* ToggleSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* ToggleSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3549BB511DA38A2000C63030 /* ToggleSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* ToggleSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3549BB521DA38A2100C63030 /* ToggleSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* ToggleSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3549BB531DA38A2200C63030 /* ToggleSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* ToggleSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3549BB661DA38ADB00C63030 /* ToggleSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* ToggleSwitch.framework */; };
-		3549BB751DA38AEF00C63030 /* ToggleSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB481DA389F300C63030 /* ToggleSwitch.framework */; };
-		3549BB841DA38B0000C63030 /* ToggleSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB3B1DA389E800C63030 /* ToggleSwitch.framework */; };
 		3549BB8B1DA38C0A00C63030 /* ToggleSwitchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549BB8A1DA38C0A00C63030 /* ToggleSwitchSpec.swift */; };
-		3549BB8C1DA38C0A00C63030 /* ToggleSwitchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549BB8A1DA38C0A00C63030 /* ToggleSwitchSpec.swift */; };
-		3549BB8D1DA38C0A00C63030 /* ToggleSwitchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549BB8A1DA38C0A00C63030 /* ToggleSwitchSpec.swift */; };
 		35CA2AC61E12925700147290 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2A971E12920400147290 /* Nimble.framework */; };
 		35CA2AC71E12925700147290 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2AB31E12920400147290 /* Quick.framework */; };
-		35CA2AC81E12927100147290 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2A931E12920400147290 /* Nimble.framework */; };
-		35CA2AC91E12927100147290 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2AAB1E12920400147290 /* Quick.framework */; };
-		35CA2AD21E12928C00147290 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2A9B1E12920400147290 /* Nimble.framework */; };
-		35CA2AD31E12928C00147290 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2ABB1E12920400147290 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,20 +21,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3549BB201DA389CD00C63030;
 			remoteInfo = "ToggleSwitch-iOS";
-		};
-		3549BB761DA38AEF00C63030 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3549BAFC1DA387DB00C63030 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3549BB471DA389F300C63030;
-			remoteInfo = "ToggleSwitch-tvOS";
-		};
-		3549BB851DA38B0000C63030 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3549BAFC1DA387DB00C63030 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3549BB3A1DA389E800C63030;
-			remoteInfo = "ToggleSwitch-macOS";
 		};
 		35CA2A921E12920400147290 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -187,49 +162,16 @@
 			remoteGlobalIDString = 1F1A74281940169200FFFC47;
 			remoteInfo = "Nimble-iOS";
 		};
-		35CA2ACA1E12927800147290 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = DAEB6B8D1943873100289F44;
-			remoteInfo = "Quick-macOS";
-		};
-		35CA2ACC1E12927800147290 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35CA2A891E12920400147290 /* Nimble.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1F925EAC195C0D6300ED456B;
-			remoteInfo = "Nimble-macOS";
-		};
-		35CA2ACE1E12928500147290 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1F118CD41BDCA4AB005013A2;
-			remoteInfo = "Quick-tvOS";
-		};
-		35CA2AD01E12928500147290 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35CA2A891E12920400147290 /* Nimble.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1F5DF1541BDCA0CE00C3A531;
-			remoteInfo = "Nimble-tvOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3549BB171DA3890B00C63030 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3549BB181DA3890B00C63030 /* ToggleSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggleSwitch.h; sourceTree = "<group>"; };
 		3549BB211DA389CD00C63030 /* ToggleSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToggleSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3549BB2E1DA389DB00C63030 /* ToggleSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToggleSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3549BB3B1DA389E800C63030 /* ToggleSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToggleSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3549BB481DA389F300C63030 /* ToggleSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToggleSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3549BB551DA38A5E00C63030 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		3549BB571DA38A8800C63030 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		3549BB581DA38A8800C63030 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3549BB611DA38ADB00C63030 /* ToggleSwitchTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ToggleSwitchTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3549BB701DA38AEF00C63030 /* ToggleSwitchTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ToggleSwitchTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3549BB7F1DA38B0000C63030 /* ToggleSwitchTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ToggleSwitchTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3549BB8A1DA38C0A00C63030 /* ToggleSwitchSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleSwitchSpec.swift; sourceTree = "<group>"; };
 		35CA2A861E12920400147290 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Carthage/Checkouts/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
 		35CA2A891E12920400147290 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Carthage/Checkouts/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
@@ -245,44 +187,10 @@
 		35CD65051E60192300AF060B /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
 		35CD65061E60192300AF060B /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		35CD65071E60192300AF060B /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
-		35CD65091E60192300AF060B /* Mac-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
-		35CD650A1E60192300AF060B /* Mac-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
-		35CD650B1E60192300AF060B /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
-		35CD650C1E60192300AF060B /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
-		35CD650D1E60192300AF060B /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
-		35CD65101E60192300AF060B /* tvOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Application.xcconfig"; sourceTree = "<group>"; };
-		35CD65111E60192300AF060B /* tvOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Base.xcconfig"; sourceTree = "<group>"; };
-		35CD65121E60192300AF060B /* tvOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Framework.xcconfig"; sourceTree = "<group>"; };
-		35CD65131E60192300AF060B /* tvOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
-		35CD65151E60192300AF060B /* watchOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Application.xcconfig"; sourceTree = "<group>"; };
-		35CD65161E60192300AF060B /* watchOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Base.xcconfig"; sourceTree = "<group>"; };
-		35CD65171E60192300AF060B /* watchOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-Framework.xcconfig"; sourceTree = "<group>"; };
-		35CD65181E60192300AF060B /* watchOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3549BB1D1DA389CD00C63030 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB2A1DA389DB00C63030 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB371DA389E800C63030 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB441DA389F300C63030 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,26 +204,6 @@
 				35CA2AC61E12925700147290 /* Nimble.framework in Frameworks */,
 				35CA2AC71E12925700147290 /* Quick.framework in Frameworks */,
 				3549BB661DA38ADB00C63030 /* ToggleSwitch.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB6D1DA38AEF00C63030 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35CA2AD21E12928C00147290 /* Nimble.framework in Frameworks */,
-				35CA2AD31E12928C00147290 /* Quick.framework in Frameworks */,
-				3549BB751DA38AEF00C63030 /* ToggleSwitch.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB7C1DA38B0000C63030 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35CA2AC81E12927100147290 /* Nimble.framework in Frameworks */,
-				35CA2AC91E12927100147290 /* Quick.framework in Frameworks */,
-				3549BB841DA38B0000C63030 /* ToggleSwitch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,12 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				3549BB211DA389CD00C63030 /* ToggleSwitch.framework */,
-				3549BB2E1DA389DB00C63030 /* ToggleSwitch.framework */,
-				3549BB3B1DA389E800C63030 /* ToggleSwitch.framework */,
-				3549BB481DA389F300C63030 /* ToggleSwitch.framework */,
 				3549BB611DA38ADB00C63030 /* ToggleSwitchTests-iOS.xctest */,
-				3549BB701DA38AEF00C63030 /* ToggleSwitchTests-tvOS.xctest */,
-				3549BB7F1DA38B0000C63030 /* ToggleSwitchTests-macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -445,9 +328,6 @@
 			children = (
 				35CD64E71E60192300AF060B /* Base */,
 				35CD65031E60192300AF060B /* iOS */,
-				35CD65081E60192300AF060B /* Mac OS X */,
-				35CD650F1E60192300AF060B /* tvOS */,
-				35CD65141E60192300AF060B /* watchOS */,
 			);
 			name = xcconfigs;
 			path = Carthage/Checkouts/xcconfigs;
@@ -495,40 +375,6 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		35CD65081E60192300AF060B /* Mac OS X */ = {
-			isa = PBXGroup;
-			children = (
-				35CD65091E60192300AF060B /* Mac-Application.xcconfig */,
-				35CD650A1E60192300AF060B /* Mac-Base.xcconfig */,
-				35CD650B1E60192300AF060B /* Mac-DynamicLibrary.xcconfig */,
-				35CD650C1E60192300AF060B /* Mac-Framework.xcconfig */,
-				35CD650D1E60192300AF060B /* Mac-StaticLibrary.xcconfig */,
-			);
-			path = "Mac OS X";
-			sourceTree = "<group>";
-		};
-		35CD650F1E60192300AF060B /* tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				35CD65101E60192300AF060B /* tvOS-Application.xcconfig */,
-				35CD65111E60192300AF060B /* tvOS-Base.xcconfig */,
-				35CD65121E60192300AF060B /* tvOS-Framework.xcconfig */,
-				35CD65131E60192300AF060B /* tvOS-StaticLibrary.xcconfig */,
-			);
-			path = tvOS;
-			sourceTree = "<group>";
-		};
-		35CD65141E60192300AF060B /* watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				35CD65151E60192300AF060B /* watchOS-Application.xcconfig */,
-				35CD65161E60192300AF060B /* watchOS-Base.xcconfig */,
-				35CD65171E60192300AF060B /* watchOS-Framework.xcconfig */,
-				35CD65181E60192300AF060B /* watchOS-StaticLibrary.xcconfig */,
-			);
-			path = watchOS;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -537,30 +383,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3549BB501DA38A2000C63030 /* ToggleSwitch.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB2B1DA389DB00C63030 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3549BB521DA38A2100C63030 /* ToggleSwitch.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB381DA389E800C63030 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3549BB531DA38A2200C63030 /* ToggleSwitch.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB451DA389F300C63030 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3549BB511DA38A2000C63030 /* ToggleSwitch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,60 +407,6 @@
 			productReference = 3549BB211DA389CD00C63030 /* ToggleSwitch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3549BB2D1DA389DB00C63030 /* ToggleSwitch-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB331DA389DB00C63030 /* Build configuration list for PBXNativeTarget "ToggleSwitch-watchOS" */;
-			buildPhases = (
-				3549BB291DA389DB00C63030 /* Sources */,
-				3549BB2A1DA389DB00C63030 /* Frameworks */,
-				3549BB2B1DA389DB00C63030 /* Headers */,
-				3549BB2C1DA389DB00C63030 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ToggleSwitch-watchOS";
-			productName = "ToggleSwitch-watchOS";
-			productReference = 3549BB2E1DA389DB00C63030 /* ToggleSwitch.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3549BB3A1DA389E800C63030 /* ToggleSwitch-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB401DA389E800C63030 /* Build configuration list for PBXNativeTarget "ToggleSwitch-macOS" */;
-			buildPhases = (
-				3549BB361DA389E800C63030 /* Sources */,
-				3549BB371DA389E800C63030 /* Frameworks */,
-				3549BB381DA389E800C63030 /* Headers */,
-				3549BB391DA389E800C63030 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ToggleSwitch-macOS";
-			productName = "ToggleSwitch-macOS";
-			productReference = 3549BB3B1DA389E800C63030 /* ToggleSwitch.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3549BB471DA389F300C63030 /* ToggleSwitch-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB4D1DA389F300C63030 /* Build configuration list for PBXNativeTarget "ToggleSwitch-tvOS" */;
-			buildPhases = (
-				3549BB431DA389F300C63030 /* Sources */,
-				3549BB441DA389F300C63030 /* Frameworks */,
-				3549BB451DA389F300C63030 /* Headers */,
-				3549BB461DA389F300C63030 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ToggleSwitch-tvOS";
-			productName = "ToggleSwitch-tvOS";
-			productReference = 3549BB481DA389F300C63030 /* ToggleSwitch.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		3549BB601DA38ADB00C63030 /* ToggleSwitchTests-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "ToggleSwitchTests-iOS" */;
@@ -659,46 +427,6 @@
 			productReference = 3549BB611DA38ADB00C63030 /* ToggleSwitchTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3549BB6F1DA38AEF00C63030 /* ToggleSwitchTests-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB781DA38AEF00C63030 /* Build configuration list for PBXNativeTarget "ToggleSwitchTests-tvOS" */;
-			buildPhases = (
-				3549BB6C1DA38AEF00C63030 /* Sources */,
-				3549BB6D1DA38AEF00C63030 /* Frameworks */,
-				3549BB6E1DA38AEF00C63030 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				35CA2ACF1E12928500147290 /* PBXTargetDependency */,
-				35CA2AD11E12928500147290 /* PBXTargetDependency */,
-				3549BB771DA38AEF00C63030 /* PBXTargetDependency */,
-			);
-			name = "ToggleSwitchTests-tvOS";
-			productName = "ToggleSwitchTests-tvOS";
-			productReference = 3549BB701DA38AEF00C63030 /* ToggleSwitchTests-tvOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3549BB7E1DA38B0000C63030 /* ToggleSwitchTests-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3549BB871DA38B0000C63030 /* Build configuration list for PBXNativeTarget "ToggleSwitchTests-macOS" */;
-			buildPhases = (
-				3549BB7B1DA38B0000C63030 /* Sources */,
-				3549BB7C1DA38B0000C63030 /* Frameworks */,
-				3549BB7D1DA38B0000C63030 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				35CA2ACB1E12927800147290 /* PBXTargetDependency */,
-				35CA2ACD1E12927800147290 /* PBXTargetDependency */,
-				3549BB861DA38B0000C63030 /* PBXTargetDependency */,
-			);
-			name = "ToggleSwitchTests-macOS";
-			productName = "ToggleSwitchTests-macOS";
-			productReference = 3549BB7F1DA38B0000C63030 /* ToggleSwitchTests-macOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -707,35 +435,13 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Decimal";
+				ORGANIZATIONNAME = Decimal;
 				TargetAttributes = {
 					3549BB201DA389CD00C63030 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
-					3549BB2D1DA389DB00C63030 = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-					};
-					3549BB3A1DA389E800C63030 = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-					};
-					3549BB471DA389F300C63030 = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-					};
 					3549BB601DA38ADB00C63030 = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
-					};
-					3549BB6F1DA38AEF00C63030 = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
-					};
-					3549BB7E1DA38B0000C63030 = {
 						CreatedOnToolsVersion = 8.0;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
@@ -766,11 +472,6 @@
 			targets = (
 				3549BB201DA389CD00C63030 /* ToggleSwitch-iOS */,
 				3549BB601DA38ADB00C63030 /* ToggleSwitchTests-iOS */,
-				3549BB3A1DA389E800C63030 /* ToggleSwitch-macOS */,
-				3549BB7E1DA38B0000C63030 /* ToggleSwitchTests-macOS */,
-				3549BB471DA389F300C63030 /* ToggleSwitch-tvOS */,
-				3549BB6F1DA38AEF00C63030 /* ToggleSwitchTests-tvOS */,
-				3549BB2D1DA389DB00C63030 /* ToggleSwitch-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -912,42 +613,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3549BB2C1DA389DB00C63030 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB391DA389E800C63030 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB461DA389F300C63030 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3549BB5F1DA38ADB00C63030 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB6E1DA38AEF00C63030 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB7D1DA38B0000C63030 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -964,48 +630,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3549BB291DA389DB00C63030 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB361DA389E800C63030 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB431DA389F300C63030 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3549BB5D1DA38ADB00C63030 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3549BB8B1DA38C0A00C63030 /* ToggleSwitchSpec.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB6C1DA38AEF00C63030 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3549BB8D1DA38C0A00C63030 /* ToggleSwitchSpec.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3549BB7B1DA38B0000C63030 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3549BB8C1DA38C0A00C63030 /* ToggleSwitchSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1017,16 +646,6 @@
 			target = 3549BB201DA389CD00C63030 /* ToggleSwitch-iOS */;
 			targetProxy = 3549BB671DA38ADB00C63030 /* PBXContainerItemProxy */;
 		};
-		3549BB771DA38AEF00C63030 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3549BB471DA389F300C63030 /* ToggleSwitch-tvOS */;
-			targetProxy = 3549BB761DA38AEF00C63030 /* PBXContainerItemProxy */;
-		};
-		3549BB861DA38B0000C63030 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3549BB3A1DA389E800C63030 /* ToggleSwitch-macOS */;
-			targetProxy = 3549BB851DA38B0000C63030 /* PBXContainerItemProxy */;
-		};
 		35CA2AC31E12922F00147290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Quick-iOS";
@@ -1036,26 +655,6 @@
 			isa = PBXTargetDependency;
 			name = "Nimble-iOS";
 			targetProxy = 35CA2AC41E12922F00147290 /* PBXContainerItemProxy */;
-		};
-		35CA2ACB1E12927800147290 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Quick-macOS";
-			targetProxy = 35CA2ACA1E12927800147290 /* PBXContainerItemProxy */;
-		};
-		35CA2ACD1E12927800147290 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Nimble-macOS";
-			targetProxy = 35CA2ACC1E12927800147290 /* PBXContainerItemProxy */;
-		};
-		35CA2ACF1E12928500147290 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Quick-tvOS";
-			targetProxy = 35CA2ACE1E12928500147290 /* PBXContainerItemProxy */;
-		};
-		35CA2AD11E12928500147290 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Nimble-tvOS";
-			targetProxy = 35CA2AD01E12928500147290 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1181,7 +780,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitch";
+				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.toggleswitch.ToggleSwitch;
 				PRODUCT_NAME = ToggleSwitch;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1206,146 +805,10 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitch";
+				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.toggleswitch.ToggleSwitch;
 				PRODUCT_NAME = ToggleSwitch;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		3549BB341DA389DB00C63030 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD65171E60192300AF060B /* watchOS-Framework.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitch";
-				PRODUCT_NAME = ToggleSwitch;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		3549BB351DA389DB00C63030 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD65171E60192300AF060B /* watchOS-Framework.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitch";
-				PRODUCT_NAME = ToggleSwitch;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		3549BB411DA389E800C63030 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD650C1E60192300AF060B /* Mac-Framework.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitch";
-				PRODUCT_NAME = ToggleSwitch;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		3549BB421DA389E800C63030 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD650C1E60192300AF060B /* Mac-Framework.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitch";
-				PRODUCT_NAME = ToggleSwitch;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		3549BB4E1DA389F300C63030 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD65121E60192300AF060B /* tvOS-Framework.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitch";
-				PRODUCT_NAME = ToggleSwitch;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Debug;
-		};
-		3549BB4F1DA389F300C63030 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD65121E60192300AF060B /* tvOS-Framework.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitch";
-				PRODUCT_NAME = ToggleSwitch;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -1360,7 +823,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitchTests";
+				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.toggleswitch.ToggleSwitchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1378,90 +841,8 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitchTests";
+				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.toggleswitch.ToggleSwitchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		3549BB791DA38AEF00C63030 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD65101E60192300AF060B /* tvOS-Application.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
-				INFOPLIST_FILE = "Tests/Info-tvOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitchTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Debug;
-		};
-		3549BB7A1DA38AEF00C63030 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD65101E60192300AF060B /* tvOS-Application.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
-				INFOPLIST_FILE = "Tests/Info-tvOS.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitchTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 3.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Release;
-		};
-		3549BB881DA38B0000C63030 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD65091E60192300AF060B /* Mac-Application.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitchTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		3549BB891DA38B0000C63030 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD65091E60192300AF060B /* Mac-Application.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "gr.decimal.toggleswitch.ToggleSwitchTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -1487,56 +868,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3549BB331DA389DB00C63030 /* Build configuration list for PBXNativeTarget "ToggleSwitch-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3549BB341DA389DB00C63030 /* Debug */,
-				3549BB351DA389DB00C63030 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3549BB401DA389E800C63030 /* Build configuration list for PBXNativeTarget "ToggleSwitch-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3549BB411DA389E800C63030 /* Debug */,
-				3549BB421DA389E800C63030 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3549BB4D1DA389F300C63030 /* Build configuration list for PBXNativeTarget "ToggleSwitch-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3549BB4E1DA389F300C63030 /* Debug */,
-				3549BB4F1DA389F300C63030 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "ToggleSwitchTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3549BB6A1DA38ADB00C63030 /* Debug */,
 				3549BB6B1DA38ADB00C63030 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3549BB781DA38AEF00C63030 /* Build configuration list for PBXNativeTarget "ToggleSwitchTests-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3549BB791DA38AEF00C63030 /* Debug */,
-				3549BB7A1DA38AEF00C63030 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3549BB871DA38B0000C63030 /* Build configuration list for PBXNativeTarget "ToggleSwitchTests-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3549BB881DA38B0000C63030 /* Debug */,
-				3549BB891DA38B0000C63030 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

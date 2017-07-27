@@ -5,9 +5,6 @@
       location = "group:ToggleSwitch.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ToggleSwitch.playground">
-   </FileRef>
-   <FileRef
       location = "group:scripts">
    </FileRef>
    <FileRef
