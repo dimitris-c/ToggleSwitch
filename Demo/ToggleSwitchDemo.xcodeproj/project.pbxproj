@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0535D1D50A47FE04F702D13A /* Pods_ToggleSwitchDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413D0B580292C3A5BE413E99 /* Pods_ToggleSwitchDemo.framework */; };
+		B55970A21F2A4C610011C0E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55970A11F2A4C610011C0E3 /* AppDelegate.swift */; };
+		B55970A41F2A4C610011C0E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55970A31F2A4C610011C0E3 /* ViewController.swift */; };
+		B55970A71F2A4C610011C0E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55970A51F2A4C610011C0E3 /* Main.storyboard */; };
+		B55970A91F2A4C610011C0E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55970A81F2A4C610011C0E3 /* Assets.xcassets */; };
+		B55970AC1F2A4C610011C0E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55970AA1F2A4C610011C0E3 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E3FBAE205258BF387EAB4DD /* Pods-ToggleSwitchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToggleSwitchDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToggleSwitchDemo/Pods-ToggleSwitchDemo.release.xcconfig"; sourceTree = "<group>"; };
+		30E72B02B890E255B1580B58 /* Pods-ToggleSwitchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToggleSwitchDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToggleSwitchDemo/Pods-ToggleSwitchDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		413D0B580292C3A5BE413E99 /* Pods_ToggleSwitchDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToggleSwitchDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B559709E1F2A4C610011C0E3 /* ToggleSwitchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToggleSwitchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55970A11F2A4C610011C0E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B55970A31F2A4C610011C0E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B55970A61F2A4C610011C0E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B55970A81F2A4C610011C0E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B55970AB1F2A4C610011C0E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B55970AD1F2A4C610011C0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B559709B1F2A4C610011C0E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0535D1D50A47FE04F702D13A /* Pods_ToggleSwitchDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E8A7B8F5CBE961C7B38E3CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30E72B02B890E255B1580B58 /* Pods-ToggleSwitchDemo.debug.xcconfig */,
+				1E3FBAE205258BF387EAB4DD /* Pods-ToggleSwitchDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		55550DB7055255DDCB3B96EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				413D0B580292C3A5BE413E99 /* Pods_ToggleSwitchDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B55970951F2A4C610011C0E3 = {
+			isa = PBXGroup;
+			children = (
+				B55970A01F2A4C610011C0E3 /* ToggleSwitchDemo */,
+				B559709F1F2A4C610011C0E3 /* Products */,
+				3E8A7B8F5CBE961C7B38E3CB /* Pods */,
+				55550DB7055255DDCB3B96EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B559709F1F2A4C610011C0E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B559709E1F2A4C610011C0E3 /* ToggleSwitchDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B55970A01F2A4C610011C0E3 /* ToggleSwitchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B55970A11F2A4C610011C0E3 /* AppDelegate.swift */,
+				B55970A31F2A4C610011C0E3 /* ViewController.swift */,
+				B55970A51F2A4C610011C0E3 /* Main.storyboard */,
+				B55970A81F2A4C610011C0E3 /* Assets.xcassets */,
+				B55970AA1F2A4C610011C0E3 /* LaunchScreen.storyboard */,
+				B55970AD1F2A4C610011C0E3 /* Info.plist */,
+			);
+			path = ToggleSwitchDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B559709D1F2A4C610011C0E3 /* ToggleSwitchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B55970B01F2A4C610011C0E3 /* Build configuration list for PBXNativeTarget "ToggleSwitchDemo" */;
+			buildPhases = (
+				91DBF102E5D0F0719E879C37 /* [CP] Check Pods Manifest.lock */,
+				B559709A1F2A4C610011C0E3 /* Sources */,
+				B559709B1F2A4C610011C0E3 /* Frameworks */,
+				B559709C1F2A4C610011C0E3 /* Resources */,
+				6DACC1D23F896419C7F5E883 /* [CP] Embed Pods Frameworks */,
+				AFDB82036E5122B103C1CC52 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToggleSwitchDemo;
+			productName = ToggleSwitchDemo;
+			productReference = B559709E1F2A4C610011C0E3 /* ToggleSwitchDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B55970961F2A4C610011C0E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Decimal;
+				TargetAttributes = {
+					B559709D1F2A4C610011C0E3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B55970991F2A4C610011C0E3 /* Build configuration list for PBXProject "ToggleSwitchDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B55970951F2A4C610011C0E3;
+			productRefGroup = B559709F1F2A4C610011C0E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B559709D1F2A4C610011C0E3 /* ToggleSwitchDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B559709C1F2A4C610011C0E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55970AC1F2A4C610011C0E3 /* LaunchScreen.storyboard in Resources */,
+				B55970A91F2A4C610011C0E3 /* Assets.xcassets in Resources */,
+				B55970A71F2A4C610011C0E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DACC1D23F896419C7F5E883 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToggleSwitchDemo/Pods-ToggleSwitchDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91DBF102E5D0F0719E879C37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFDB82036E5122B103C1CC52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToggleSwitchDemo/Pods-ToggleSwitchDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B559709A1F2A4C610011C0E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55970A41F2A4C610011C0E3 /* ViewController.swift in Sources */,
+				B55970A21F2A4C610011C0E3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B55970A51F2A4C610011C0E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B55970A61F2A4C610011C0E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B55970AA1F2A4C610011C0E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B55970AB1F2A4C610011C0E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B55970AE1F2A4C610011C0E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B55970AF1F2A4C610011C0E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B55970B11F2A4C610011C0E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30E72B02B890E255B1580B58 /* Pods-ToggleSwitchDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ToggleSwitchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.ToggleSwitchDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B55970B21F2A4C610011C0E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E3FBAE205258BF387EAB4DD /* Pods-ToggleSwitchDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ToggleSwitchDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.ToggleSwitchDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B55970991F2A4C610011C0E3 /* Build configuration list for PBXProject "ToggleSwitchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55970AE1F2A4C610011C0E3 /* Debug */,
+				B55970AF1F2A4C610011C0E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B55970B01F2A4C610011C0E3 /* Build configuration list for PBXNativeTarget "ToggleSwitchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B55970B11F2A4C610011C0E3 /* Debug */,
+				B55970B21F2A4C610011C0E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B55970961F2A4C610011C0E3 /* Project object */;
+}

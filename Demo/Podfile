@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+def libraries
+  pod 'ToggleSwitch', :path => "../"
+end
+
+target 'ToggleSwitchDemo' do
+  platform :ios, '9.0'
+  libraries
+end
