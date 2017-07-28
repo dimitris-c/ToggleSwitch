@@ -12,6 +12,9 @@
 		3549BB8B1DA38C0A00C63030 /* ToggleSwitchSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3549BB8A1DA38C0A00C63030 /* ToggleSwitchSpec.swift */; };
 		35CA2AC61E12925700147290 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2A971E12920400147290 /* Nimble.framework */; };
 		35CA2AC71E12925700147290 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2AB31E12920400147290 /* Quick.framework */; };
+		B55970B61F2A54060011C0E3 /* ToggleSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55970B51F2A54060011C0E3 /* ToggleSwitch.swift */; };
+		B55970CA1F2A54840011C0E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55970C81F2A54500011C0E3 /* UIKit.framework */; };
+		B575DC201F2B4FAC00CE6773 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B575DC1E1F2B4F8D00CE6773 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,7 +172,6 @@
 		3549BB181DA3890B00C63030 /* ToggleSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggleSwitch.h; sourceTree = "<group>"; };
 		3549BB211DA389CD00C63030 /* ToggleSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToggleSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3549BB551DA38A5E00C63030 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		3549BB571DA38A8800C63030 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		3549BB581DA38A8800C63030 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3549BB611DA38ADB00C63030 /* ToggleSwitchTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ToggleSwitchTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3549BB8A1DA38C0A00C63030 /* ToggleSwitchSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleSwitchSpec.swift; sourceTree = "<group>"; };
@@ -187,6 +189,10 @@
 		35CD65051E60192300AF060B /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
 		35CD65061E60192300AF060B /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		35CD65071E60192300AF060B /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		B55970B51F2A54060011C0E3 /* ToggleSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleSwitch.swift; sourceTree = "<group>"; };
+		B55970C81F2A54500011C0E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B575DC1E1F2B4F8D00CE6773 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		B575DC271F2B931B00CE6773 /* ToggleSwitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToggleSwitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55970CA1F2A54840011C0E3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +211,13 @@
 				35CA2AC61E12925700147290 /* Nimble.framework in Frameworks */,
 				35CA2AC71E12925700147290 /* Quick.framework in Frameworks */,
 				3549BB661DA38ADB00C63030 /* ToggleSwitch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B575DC241F2B931B00CE6773 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +240,7 @@
 			children = (
 				3549BB211DA389CD00C63030 /* ToggleSwitch.framework */,
 				3549BB611DA38ADB00C63030 /* ToggleSwitchTests-iOS.xctest */,
+				B575DC271F2B931B00CE6773 /* ToggleSwitchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,6 +259,7 @@
 			children = (
 				3549BB8A1DA38C0A00C63030 /* ToggleSwitchSpec.swift */,
 				3549BB5B1DA38A8C00C63030 /* Supporting Files */,
+				B575DC1E1F2B4F8D00CE6773 /* Media.xcassets */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -262,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				3549BB581DA38A8800C63030 /* Info.plist */,
-				3549BB571DA38A8800C63030 /* Info-tvOS.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -270,6 +285,7 @@
 		3549BB5C1DA38AA500C63030 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B55970B51F2A54060011C0E3 /* ToggleSwitch.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -277,6 +293,7 @@
 		357D954B1DA3F2B400AEC55F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B55970C81F2A54500011C0E3 /* UIKit.framework */,
 				35CA2A861E12920400147290 /* Quick.xcodeproj */,
 				35CA2A891E12920400147290 /* Nimble.xcodeproj */,
 			);
@@ -427,23 +444,45 @@
 			productReference = 3549BB611DA38ADB00C63030 /* ToggleSwitchTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B575DC261F2B931B00CE6773 /* ToggleSwitchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B575DC2C1F2B931B00CE6773 /* Build configuration list for PBXNativeTarget "ToggleSwitchUITests" */;
+			buildPhases = (
+				B575DC231F2B931B00CE6773 /* Sources */,
+				B575DC241F2B931B00CE6773 /* Frameworks */,
+				B575DC251F2B931B00CE6773 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToggleSwitchUITests;
+			productName = ToggleSwitchUITests;
+			productReference = B575DC271F2B931B00CE6773 /* ToggleSwitchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3549BAFC1DA387DB00C63030 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Decimal;
 				TargetAttributes = {
 					3549BB201DA389CD00C63030 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					3549BB601DA38ADB00C63030 = {
 						CreatedOnToolsVersion = 8.0;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					B575DC261F2B931B00CE6773 = {
+						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -472,6 +511,7 @@
 			targets = (
 				3549BB201DA389CD00C63030 /* ToggleSwitch-iOS */,
 				3549BB601DA38ADB00C63030 /* ToggleSwitchTests-iOS */,
+				B575DC261F2B931B00CE6773 /* ToggleSwitchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -617,6 +657,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B575DC201F2B4FAC00CE6773 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B575DC251F2B931B00CE6773 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +675,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55970B61F2A54060011C0E3 /* ToggleSwitch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +684,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3549BB8B1DA38C0A00C63030 /* ToggleSwitchSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B575DC231F2B931B00CE6773 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,6 +822,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35CD65061E60192300AF060B /* iOS-Framework.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -783,6 +840,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.toggleswitch.ToggleSwitch;
 				PRODUCT_NAME = ToggleSwitch;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -791,6 +849,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35CD65061E60192300AF060B /* iOS-Framework.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -816,6 +875,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35CD65041E60192300AF060B /* iOS-Application.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -834,6 +894,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35CD65041E60192300AF060B /* iOS-Application.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -842,6 +903,32 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.toggleswitch.ToggleSwitchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B575DC2D1F2B931B00CE6773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = ToggleSwitchUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.ToggleSwitchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B575DC2E1F2B931B00CE6773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = ToggleSwitchUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.ToggleSwitchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -876,6 +963,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B575DC2C1F2B931B00CE6773 /* Build configuration list for PBXNativeTarget "ToggleSwitchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B575DC2D1F2B931B00CE6773 /* Debug */,
+				B575DC2E1F2B931B00CE6773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
