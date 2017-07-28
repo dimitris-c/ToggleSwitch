@@ -96,7 +96,7 @@ $ git init
 - Add ToggleSwitch as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following command:
 
 ```bash
-$ git submodule add https://github.com/Decimal/ToggleSwitch.git
+$ git submodule add https://github.com/dimitris-c/ToggleSwitch.git
 $ git submodule update --init --recursive
 ```
 
@@ -120,7 +120,7 @@ $ git submodule update --init --recursive
 
 #### Embeded Binaries
 
-- Download the latest release from https://github.com/Decimal/ToggleSwitch/releases
+- Download the latest release from https://github.com/dimitris-c/ToggleSwitch/releases
 - Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the "Targets" heading in the sidebar.
 - In the tab bar at the top of that window, open the "General" panel.
 - Click on the `+` button under the "Embedded Binaries" section.
