@@ -338,6 +338,7 @@
 			baseConfigurationReference = 30E72B02B890E255B1580B58 /* Pods-ToggleSwitchDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ToggleSwitchDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.ToggleSwitchDemo;
@@ -351,6 +352,7 @@
 			baseConfigurationReference = 1E3FBAE205258BF387EAB4DD /* Pods-ToggleSwitchDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ToggleSwitchDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.ToggleSwitchDemo;
@@ -378,6 +380,7 @@
 				B55970B21F2A4C610011C0E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

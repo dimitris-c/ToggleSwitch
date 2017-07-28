@@ -971,6 +971,7 @@
 				B575DC2E1F2B931B00CE6773 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
