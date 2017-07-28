@@ -7,10 +7,12 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/ToggleSwitch.svg)](https://cocoapods.org/pods/ToggleSwitch)
 
-[![Travis](https://img.shields.io/travis/Decimal/ToggleSwitch/master.svg)](https://travis-ci.org/Decimal/ToggleSwitch/branches)
+[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=597b5efb29742d00016dff41&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/597b5efb29742d00016dff41/build/latest?branch=master)
 [![JetpackSwift](https://img.shields.io/badge/JetpackSwift-framework-red.svg)](http://github.com/JetpackSwift/Framework)
 
-A custom UISwitch
+A simple and custom UISwitch made out of images.
+
+
 
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -128,6 +130,47 @@ $ git submodule update --init --recursive
 - And that's it!
 
 ## Usage
+
+Pretty standard integration as it's like adding a UISwitch.
+
+```swift
+let images = ToggleSwitchImages(baseOnImage: UIImage(named: "base_on"), 
+                                baseOffImage: UIImage(named: "base_off"),
+                                thumbOnImage: UIImage(named: "thumb_on"),
+                                thumbOffImage: UIImage(named: "thumb_off"))
+
+// ToggleSwitch will use the baseOnImage to construct the size of the control
+let onOffSwitch = ToggleSwitch(with: images)
+onOffSwitch.frame.origin = CGPoint(x: 100, y: 100)
+self.addSubview(onOffSwitch)                  
+
+```
+
+The control exposes two ways of retrieving when the value/state has changed.
+#### Using Block
+```swift
+
+onOffSwitch.stateChange = { state in 
+    if state == .on {
+        // do something
+    }
+}
+
+```
+
+#### Using addTarget
+```swift
+
+onOffSwitch.addTarget(self, action: #selector(toggleValueChanged), for: .valueChanged)
+
+@objc func toggleValueChanged(control: ToggleSwitch) {
+    if onOffSwitch.switchState == .on { 
+        // do something
+    }
+}
+
+```
+
 
 ## License
 
