@@ -7,10 +7,12 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/ToggleSwitch.svg)](https://cocoapods.org/pods/ToggleSwitch)
 
-[![Travis](https://img.shields.io/travis/Decimal/ToggleSwitch/master.svg)](https://travis-ci.org/Decimal/ToggleSwitch/branches)
+[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=597b5efb29742d00016dff41&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/597b5efb29742d00016dff41/build/latest?branch=master)
 [![JetpackSwift](https://img.shields.io/badge/JetpackSwift-framework-red.svg)](http://github.com/JetpackSwift/Framework)
 
-A custom UISwitch
+A simple and custom UISwitch made out of images.
+
+
 
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -85,39 +87,6 @@ let package = Package(
 
 If you prefer not to use either of the aforementioned dependency managers, you can integrate ToggleSwitch into your project manually.
 
-#### Git Submodules
-
-- Open up Terminal, `cd` into your top-level project directory, and run the following command "if" your project is not initialized as a git repository:
-
-```bash
-$ git init
-```
-
-- Add ToggleSwitch as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following command:
-
-```bash
-$ git submodule add https://github.com/dimitris-c/ToggleSwitch.git
-$ git submodule update --init --recursive
-```
-
-- Open the new `ToggleSwitch` folder, and drag the `ToggleSwitch.xcodeproj` into the Project Navigator of your application's Xcode project.
-
-    > It should appear nested underneath your application's blue project icon. Whether it is above or below all the other Xcode groups does not matter.
-
-- Select the `ToggleSwitch.xcodeproj` in the Project Navigator and verify the deployment target matches that of your application target.
-- Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the "Targets" heading in the sidebar.
-- In the tab bar at the top of that window, open the "General" panel.
-- Click on the `+` button under the "Embedded Binaries" section.
-- You will see two different `ToggleSwitch.xcodeproj` folders each with two different versions of the `ToggleSwitch.framework` nested inside a `Products` folder.
-
-    > It does not matter which `Products` folder you choose from.
-
-- Select the `ToggleSwitch.framework`.
-
-- And that's it!
-
-> The `ToggleSwitch.framework` is automagically added as a target dependency, linked framework and embedded framework in a copy files build phase which is all you need to build on the simulator and a device.
-
 #### Embeded Binaries
 
 - Download the latest release from https://github.com/dimitris-c/ToggleSwitch/releases
@@ -128,6 +97,55 @@ $ git submodule update --init --recursive
 - And that's it!
 
 ## Usage
+
+Pretty standard integration as it's like adding a UISwitch.
+
+```swift
+let images = ToggleSwitchImages(baseOnImage: UIImage(named: "base_on"), 
+                                baseOffImage: UIImage(named: "base_off"),
+                                thumbOnImage: UIImage(named: "thumb_on"),
+                                thumbOffImage: UIImage(named: "thumb_off"))
+
+// ToggleSwitch will use the baseOnImage to construct the size of the control
+let onOffSwitch = ToggleSwitch(with: images)
+onOffSwitch.frame.origin = CGPoint(x: 100, y: 100)
+self.addSubview(onOffSwitch)                  
+
+```
+
+The control exposes two ways of retrieving when the value/state has changed.
+#### Using Block
+```swift
+
+onOffSwitch.stateChange = { state in 
+    if state == .on {
+        // do something
+    }
+}
+
+```
+
+#### Using Target-Action
+```swift
+
+onOffSwitch.addTarget(self, action: #selector(toggleValueChanged), for: .valueChanged)
+
+@objc func toggleValueChanged(control: ToggleSwitch) {
+    if onOffSwitch.switchState == .on { 
+        // do something
+    }
+}
+
+```
+
+Similar to UISwitch, ToggleSwitch exposes `isOn` and `setOn(on:animated:)` method
+```swift
+
+onOffSwitch.isOn = true
+
+onOffSwitch.setOn(on: false, animated: true)
+
+```
 
 ## License
 
