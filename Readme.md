@@ -87,39 +87,6 @@ let package = Package(
 
 If you prefer not to use either of the aforementioned dependency managers, you can integrate ToggleSwitch into your project manually.
 
-#### Git Submodules
-
-- Open up Terminal, `cd` into your top-level project directory, and run the following command "if" your project is not initialized as a git repository:
-
-```bash
-$ git init
-```
-
-- Add ToggleSwitch as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following command:
-
-```bash
-$ git submodule add https://github.com/dimitris-c/ToggleSwitch.git
-$ git submodule update --init --recursive
-```
-
-- Open the new `ToggleSwitch` folder, and drag the `ToggleSwitch.xcodeproj` into the Project Navigator of your application's Xcode project.
-
-    > It should appear nested underneath your application's blue project icon. Whether it is above or below all the other Xcode groups does not matter.
-
-- Select the `ToggleSwitch.xcodeproj` in the Project Navigator and verify the deployment target matches that of your application target.
-- Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the "Targets" heading in the sidebar.
-- In the tab bar at the top of that window, open the "General" panel.
-- Click on the `+` button under the "Embedded Binaries" section.
-- You will see two different `ToggleSwitch.xcodeproj` folders each with two different versions of the `ToggleSwitch.framework` nested inside a `Products` folder.
-
-    > It does not matter which `Products` folder you choose from.
-
-- Select the `ToggleSwitch.framework`.
-
-- And that's it!
-
-> The `ToggleSwitch.framework` is automagically added as a target dependency, linked framework and embedded framework in a copy files build phase which is all you need to build on the simulator and a device.
-
 #### Embeded Binaries
 
 - Download the latest release from https://github.com/dimitris-c/ToggleSwitch/releases
@@ -158,7 +125,7 @@ onOffSwitch.stateChange = { state in
 
 ```
 
-#### Using addTarget
+#### Using Target-Action
 ```swift
 
 onOffSwitch.addTarget(self, action: #selector(toggleValueChanged), for: .valueChanged)
@@ -171,6 +138,14 @@ onOffSwitch.addTarget(self, action: #selector(toggleValueChanged), for: .valueCh
 
 ```
 
+Similar to UISwitch, ToggleSwitch exposes `isOn` and `setOn(on:animated:)` method
+```swift
+
+onOffSwitch.isOn = true
+
+onOffSwitch.setOn(on: false, animated: true)
+
+```
 
 ## License
 
