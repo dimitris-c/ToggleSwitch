@@ -49,7 +49,15 @@ open class ToggleSwitch: UIControl {
 
     private(set) var switchState: ToggleSwitchState = .off
 
-    public var configurationImages: ToggleSwitchImages?
+    public var configurationImages: ToggleSwitchImages? {
+        didSet {
+            self.removeGestures()
+            self.base?.removeFromSuperview()
+            self.thumb?.removeFromSuperview()
+            self.panBase?.removeFromSuperview()
+            self.setupCommon()
+        }
+    }
 
     public var isOn: Bool = false {
         didSet {
@@ -64,7 +72,12 @@ open class ToggleSwitch: UIControl {
         self.configurationImages = images
         self.setupCommon()
     }
-    
+
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setupCommon()
+    }
+
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setupCommon()
@@ -88,17 +101,11 @@ open class ToggleSwitch: UIControl {
         self.base.sizeToFit()
         self.thumb.sizeToFit()
 
-        self.leftEdge = self.thumb.frame.width * 0.5
-        self.rightEdge = self.base.frame.maxX - self.thumb.frame.width * 0.5
+        self.configureLeftAndRightEdge()
 
         self.thumb.center = CGPoint(x: self.leftEdge, y: self.base.frame.height * 0.5)
 
-        let panBaseRect = CGRect(x: self.base.frame.minX + self.thumb.frame.size.width * 0.5,
-                                 y: self.base.frame.minY,
-                                 width: self.base.frame.width - self.thumb.frame.size.width,
-                                 height: self.base.frame.height)
-        self.panBase = UIView(frame: panBaseRect)
-        self.addSubview(self.panBase)
+        self.attachPanBase()
 
         self.addSubview(self.base)
         self.addSubview(self.thumb)
@@ -131,15 +138,16 @@ open class ToggleSwitch: UIControl {
         switch state {
         case .on:
             self.baseOnImage = image
+            if self.switchState == .on {
+                self.base.image = image
+            }
             break
         case .off:
             self.baseOffImage = image
+            if self.switchState == .off {
+                self.base.image = image
+            }
             break
-        }
-        if switchState == .on {
-            self.base.image = image
-        } else if switchState == .off {
-            self.base.image = image
         }
         self.base.sizeToFit()
         self.sizeToFit()
@@ -164,9 +172,15 @@ open class ToggleSwitch: UIControl {
         switch state {
         case .on:
             self.thumbOnImage = image
+            if self.switchState == .on {
+                self.thumb.image = image
+            }
             break
         case .off:
             self.thumbOffImage = image
+            if self.switchState == .off {
+                self.thumb.image = image
+            }
             break
         }
         self.thumb.sizeToFit()
@@ -195,6 +209,20 @@ open class ToggleSwitch: UIControl {
 
     // MARK: Private
 
+    private func configureLeftAndRightEdge() {
+        self.leftEdge = self.thumb.frame.width * 0.5
+        self.rightEdge = self.base.frame.maxX - self.thumb.frame.width * 0.5
+    }
+
+    private func attachPanBase() {
+        let panBaseRect = CGRect(x: self.base.frame.minX + self.thumb.frame.size.width * 0.5,
+                                 y: self.base.frame.minY,
+                                 width: self.base.frame.width - self.thumb.frame.size.width,
+                                 height: self.base.frame.height)
+        self.panBase = UIView(frame: panBaseRect)
+        self.addSubview(self.panBase)
+    }
+
     private func setState(on: Bool, animated: Bool) {
         if on {
             switchState = .on
@@ -203,6 +231,11 @@ open class ToggleSwitch: UIControl {
             switchState = .off
             self.offState(animated: animated, isTriggeredByUserInteraction: false)
         }
+    }
+
+    private func removeGestures() {
+        self.thumb?.gestureRecognizers = []
+        self.base?.gestureRecognizers = []
     }
 
     private func addGestures() {
