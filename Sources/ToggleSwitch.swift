@@ -137,11 +137,15 @@ open class ToggleSwitch: UIControl {
         switch state {
         case .on:
             self.baseOnImage = image
-            self.base.image = image
+            if self.switchState == .on {
+                self.base.image = image
+            }
             break
         case .off:
             self.baseOffImage = image
-            self.base.image = image
+            if self.switchState == .off {
+                self.base.image = image
+            }
             break
         }
         self.base.sizeToFit()
@@ -167,9 +171,15 @@ open class ToggleSwitch: UIControl {
         switch state {
         case .on:
             self.thumbOnImage = image
+            if self.switchState == .on {
+                self.thumb.image = image
+            }
             break
         case .off:
             self.thumbOffImage = image
+            if self.switchState == .off {
+                self.thumb.image = image
+            }
             break
         }
         self.thumb.sizeToFit()
