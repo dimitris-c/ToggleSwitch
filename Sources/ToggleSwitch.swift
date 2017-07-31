@@ -70,6 +70,7 @@ open class ToggleSwitch: UIControl {
     public init(with images: ToggleSwitchImages) {
         super.init(frame: .zero)
         self.configurationImages = images
+        self.setupCommon()
     }
 
     public override init(frame: CGRect) {
