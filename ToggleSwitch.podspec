@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name = 'ToggleSwitch'
- s.version = '1.0'
+ s.version = '1.1'
  s.license = { :type => "MIT", :file => "LICENSE" }
  s.summary = 'A custom UISwitch'
  s.homepage = 'http://decimal.gr'
