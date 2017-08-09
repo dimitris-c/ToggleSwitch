@@ -57,9 +57,12 @@ open class ToggleSwitch: UIControl {
         }
     }
     private var _isOn: Bool = false
-    public var isOn: Bool = false {
-        didSet {
-            _isOn = isOn
+    public var isOn: Bool {
+        get {
+            return _isOn
+        }
+        set(value) {
+            _isOn = value
             self.setState(on: isOn, animated: false, isTriggeredByUserInteraction: false)
         }
     }

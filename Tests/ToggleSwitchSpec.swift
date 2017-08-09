@@ -90,19 +90,15 @@ class ToggleSwitchSpec: QuickSpec {
 
                     onOffSwitch.isOn = false
                     expect(onOffSwitch.isOn).to(beFalse())
-                    expect(onOffSwitch.switchState == .on).to(beFalse())
 
                     onOffSwitch.isOn = true
                     expect(onOffSwitch.isOn).to(beTrue())
-                    expect(onOffSwitch.switchState == .on).to(beTrue())
 
                     onOffSwitch.setOn(on: false, animated: false)
                     expect(onOffSwitch.isOn).to(beFalse())
-                    expect(onOffSwitch.switchState == .off).to(beTrue())
 
                     onOffSwitch.setOn(on: true, animated: false)
                     expect(onOffSwitch.isOn).to(beTrue())
-                    expect(onOffSwitch.switchState == .on).to(beTrue())
                 }
 
             })
