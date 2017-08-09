@@ -117,8 +117,8 @@ The control exposes two ways of retrieving when the value/state has changed.
 #### Using Block
 ```swift
 
-onOffSwitch.stateChange = { state in 
-    if state == .on {
+onOffSwitch.stateChange = { isOn in 
+    if isOn {
         // do something
     }
 }
@@ -131,7 +131,7 @@ onOffSwitch.stateChange = { state in
 onOffSwitch.addTarget(self, action: #selector(toggleValueChanged), for: .valueChanged)
 
 @objc func toggleValueChanged(control: ToggleSwitch) {
-    if onOffSwitch.switchState == .on { 
+    if onOffSwitch.isOn { 
         // do something
     }
 }
