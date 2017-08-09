@@ -60,7 +60,7 @@ open class ToggleSwitch: UIControl {
     public var isOn: Bool = false {
         didSet {
             _isOn = isOn
-            self.setState(on: isOn, animated: false)
+            self.setState(on: isOn, animated: false, isTriggeredByUserInteraction: false)
         }
     }
 
@@ -203,7 +203,7 @@ open class ToggleSwitch: UIControl {
      */
     public func setOn(on: Bool, animated: Bool) {
         _isOn = on
-        setState(on: on, animated: animated)
+        setState(on: on, animated: animated, isTriggeredByUserInteraction: false)
     }
 
     // MARK: Private
@@ -222,11 +222,11 @@ open class ToggleSwitch: UIControl {
         self.addSubview(self.panBase)
     }
 
-    private func setState(on: Bool, animated: Bool) {
+    private func setState(on: Bool, animated: Bool, isTriggeredByUserInteraction: Bool) {
         if on {
-            self.onState(animated: animated, isTriggeredByUserInteraction: false)
+            self.onState(animated: animated, isTriggeredByUserInteraction: isTriggeredByUserInteraction)
         } else {
-            self.offState(animated: animated, isTriggeredByUserInteraction: false)
+            self.offState(animated: animated, isTriggeredByUserInteraction: isTriggeredByUserInteraction)
         }
     }
 
@@ -246,7 +246,7 @@ open class ToggleSwitch: UIControl {
     }
 
     @objc private func tapThumbHandle(gesture: UIPanGestureRecognizer) {
-        self.setOn(on: !_isOn, animated: true)
+        self.setState(on: !_isOn, animated: true, isTriggeredByUserInteraction: true)
     }
 
     @objc private func panHandle(gesture: UIPanGestureRecognizer) {
