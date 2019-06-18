@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
  s.name = 'ToggleSwitch'
- s.version = '1.2.1'
+ s.version = '1.3'
  s.license = { :type => "MIT", :file => "LICENSE" }
  s.summary = 'A custom UISwitch'
- s.homepage = 'http://decimal.gr'
+ s.homepage = 'https://decimal.digital'
  s.authors = { "Dimitris C." => "hello@decimal.gr" }
  s.source = { :git => "https://github.com/dimitris-c/ToggleSwitch.git", :tag => s.version.to_s }
- s.platforms     = { :ios => "9.0" }
+ s.platforms     = { :ios => "11.0" }
  s.requires_arc = true
 
  s.default_subspec = "Core"

@@ -21,8 +21,8 @@ A simple and custom UISwitch made out of images.
 
 ## Requirements
 
-- iOS 9.0+
-- Xcode 8.0+
+- iOS 11.0+
+- Xcode 9.0+
 
 ## Installation
 

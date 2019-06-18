@@ -177,18 +177,6 @@
 		3549BB8A1DA38C0A00C63030 /* ToggleSwitchSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleSwitchSpec.swift; sourceTree = "<group>"; };
 		35CA2A861E12920400147290 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Carthage/Checkouts/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
 		35CA2A891E12920400147290 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Carthage/Checkouts/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
-		35CD64E81E60192300AF060B /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
-		35CD64EA1E60192300AF060B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		35CD64EB1E60192300AF060B /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
-		35CD64EC1E60192300AF060B /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		35CD64ED1E60192300AF060B /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
-		35CD64EF1E60192300AF060B /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
-		35CD64F01E60192300AF060B /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
-		35CD64F11E60192300AF060B /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
-		35CD65041E60192300AF060B /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
-		35CD65051E60192300AF060B /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
-		35CD65061E60192300AF060B /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
-		35CD65071E60192300AF060B /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		B55970B51F2A54060011C0E3 /* ToggleSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleSwitch.swift; sourceTree = "<group>"; };
 		B55970C81F2A54500011C0E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B575DC1E1F2B4F8D00CE6773 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -230,7 +218,6 @@
 				3549BB161DA3890B00C63030 /* Sources */,
 				3549BB191DA3890B00C63030 /* Tests */,
 				3549BB061DA387DB00C63030 /* Products */,
-				35CA2AD51E12933000147290 /* Configuration */,
 				357D954B1DA3F2B400AEC55F /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -332,66 +319,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		35CA2AD51E12933000147290 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				35CD64E51E60192300AF060B /* xcconfigs */,
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
-		35CD64E51E60192300AF060B /* xcconfigs */ = {
-			isa = PBXGroup;
-			children = (
-				35CD64E71E60192300AF060B /* Base */,
-				35CD65031E60192300AF060B /* iOS */,
-			);
-			name = xcconfigs;
-			path = Carthage/Checkouts/xcconfigs;
-			sourceTree = SOURCE_ROOT;
-		};
-		35CD64E71E60192300AF060B /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				35CD64E81E60192300AF060B /* Common.xcconfig */,
-				35CD64E91E60192300AF060B /* Configurations */,
-				35CD64EE1E60192300AF060B /* Targets */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		35CD64E91E60192300AF060B /* Configurations */ = {
-			isa = PBXGroup;
-			children = (
-				35CD64EA1E60192300AF060B /* Debug.xcconfig */,
-				35CD64EB1E60192300AF060B /* Profile.xcconfig */,
-				35CD64EC1E60192300AF060B /* Release.xcconfig */,
-				35CD64ED1E60192300AF060B /* Test.xcconfig */,
-			);
-			path = Configurations;
-			sourceTree = "<group>";
-		};
-		35CD64EE1E60192300AF060B /* Targets */ = {
-			isa = PBXGroup;
-			children = (
-				35CD64EF1E60192300AF060B /* Application.xcconfig */,
-				35CD64F01E60192300AF060B /* Framework.xcconfig */,
-				35CD64F11E60192300AF060B /* StaticLibrary.xcconfig */,
-			);
-			path = Targets;
-			sourceTree = "<group>";
-		};
-		35CD65031E60192300AF060B /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				35CD65041E60192300AF060B /* iOS-Application.xcconfig */,
-				35CD65051E60192300AF060B /* iOS-Base.xcconfig */,
-				35CD65061E60192300AF060B /* iOS-Framework.xcconfig */,
-				35CD65071E60192300AF060B /* iOS-StaticLibrary.xcconfig */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -489,10 +416,11 @@
 			};
 			buildConfigurationList = 3549BAFF1DA387DB00C63030 /* Build configuration list for PBXProject "ToggleSwitch" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 3549BAFB1DA387DB00C63030;
 			productRefGroup = 3549BB061DA387DB00C63030 /* Products */;
@@ -717,7 +645,6 @@
 /* Begin XCBuildConfiguration section */
 		3549BB0B1DA387DB00C63030 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD64EA1E60192300AF060B /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -758,7 +685,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -772,7 +699,6 @@
 		};
 		3549BB0C1DA387DB00C63030 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD64EC1E60192300AF060B /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -807,7 +733,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -820,7 +746,6 @@
 		};
 		3549BB271DA389CD00C63030 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD65061E60192300AF060B /* iOS-Framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -828,26 +753,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/tvOS",
-				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.toggleswitch.ToggleSwitch;
 				PRODUCT_NAME = ToggleSwitch;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		3549BB281DA389CD00C63030 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD65061E60192300AF060B /* iOS-Framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -855,25 +774,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/tvOS",
-				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.toggleswitch.ToggleSwitch;
 				PRODUCT_NAME = ToggleSwitch;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		3549BB6A1DA38ADB00C63030 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD65041E60192300AF060B /* iOS-Application.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -886,13 +799,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.toggleswitch.ToggleSwitchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		3549BB6B1DA38ADB00C63030 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35CD65041E60192300AF060B /* iOS-Application.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -904,7 +816,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gr.decimal.toggleswitch.ToggleSwitchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
